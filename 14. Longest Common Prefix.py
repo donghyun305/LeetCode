@@ -3,7 +3,7 @@ from typing import List
 def longestCommonPrefix(strs: List[str]):
     strs.sort(key=lambda x : len(x))
 
-    if len(strs)==0 or len(strs)==1:
+    if len(strs) == 0 or len(strs) == 1:
         return ""
     else:
         for i in range(len(strs[0])):
